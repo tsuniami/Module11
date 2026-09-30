@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Down Payment & Stock Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Upper Right Logo -->
+    <img src="Logo.png" alt="SneakerPapi Logo" class="top-logo">
+
+    <h1>Down Payment &amp; Stock Reservation</h1>
+
+    <h2>Reservation Entry Form</h2>
+    <form id="reservationForm">
+        <p>
+            <label for="orderId">Order ID:</label><br>
+            <input type="text" id="orderId" required maxlength="20" placeholder="ORD-2026-901">
+        </p>
+        <p>
+            <label for="downPayment">Down Payment Amount (₱):</label><br>
+            <input type="number" id="downPayment" required min="0" step="0.01" placeholder="500">
+        </p>
+        <p>
+            <label for="referenceNo">Payment Reference Number:</label><br>
+            <input type="text" id="referenceNo" required maxlength="30" placeholder="DP123456">
+        </p>
+        <button type="submit">Reserve Stock</button>
+    </form>
+
+    <h2>Reservation Output &amp; Confirmation</h2>
+    <div id="outputContainer"></div>
+
+    <script src="module11.js"></script>
+</body>
+</html>
